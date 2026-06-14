@@ -1,0 +1,24 @@
+{
+  "servers": [
+    {
+      "name": "figma",
+      "type": "url",
+      "url": "https://mcp.figma.com/mcp",
+      "enabled": true,
+      "tools": [
+        "get_screenshot",
+        "get_design_context",
+        "get_metadata",
+        "get_variable_defs",
+        "get_code_connect_map"
+      ]
+    },
+    {
+      "name": "a11y-inspector",
+      "type": "command",
+      "command": "npx -y a11y-mcp-server",
+      "enabled": false,
+      "tools": ["axe_scan", "contrast_check"]
+    }
+  ]
+}
